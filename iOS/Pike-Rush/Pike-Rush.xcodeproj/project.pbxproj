@@ -14,6 +14,8 @@
 		56649AE81B82DE81008DAAB1 /* Pike_RushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56649AE71B82DE81008DAAB1 /* Pike_RushTests.swift */; };
 		5674FD1D1B9F5C2300866667 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674FD1C1B9F5C2300866667 /* CalendarView.swift */; };
 		5674FD1F1B9F5C2F00866667 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674FD1E1B9F5C2F00866667 /* AboutView.swift */; };
+		5674FD231BA0E7F300866667 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5674FD221BA0E7F300866667 /* EventView.swift */; };
+		5674FD251BA10FC600866667 /* PKA-ID.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5674FD241BA10FC600866667 /* PKA-ID.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		56649AE71B82DE81008DAAB1 /* Pike_RushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pike_RushTests.swift; sourceTree = "<group>"; };
 		5674FD1C1B9F5C2300866667 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		5674FD1E1B9F5C2F00866667 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		5674FD221BA0E7F300866667 /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		5674FD241BA10FC600866667 /* PKA-ID.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "PKA-ID.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			children = (
 				56649ACF1B82DE81008DAAB1 /* AppDelegate.swift */,
 				5674FD1C1B9F5C2300866667 /* CalendarView.swift */,
+				5674FD221BA0E7F300866667 /* EventView.swift */,
 				5674FD1E1B9F5C2F00866667 /* AboutView.swift */,
 				56649AD51B82DE81008DAAB1 /* Main.storyboard */,
 				56649AD81B82DE81008DAAB1 /* Images.xcassets */,
@@ -93,6 +98,7 @@
 		56649ACD1B82DE81008DAAB1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5674FD241BA10FC600866667 /* PKA-ID.jpg */,
 				56649ACE1B82DE81008DAAB1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -198,6 +204,7 @@
 				56649AD71B82DE81008DAAB1 /* Main.storyboard in Resources */,
 				56649ADC1B82DE81008DAAB1 /* LaunchScreen.xib in Resources */,
 				56649AD91B82DE81008DAAB1 /* Images.xcassets in Resources */,
+				5674FD251BA10FC600866667 /* PKA-ID.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 				5674FD1D1B9F5C2300866667 /* CalendarView.swift in Sources */,
 				5674FD1F1B9F5C2F00866667 /* AboutView.swift in Sources */,
 				56649AD01B82DE81008DAAB1 /* AppDelegate.swift in Sources */,
+				5674FD231BA0E7F300866667 /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
