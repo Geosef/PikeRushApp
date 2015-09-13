@@ -43,8 +43,6 @@ class CalendarView: UIViewController, UITableViewDelegate, UITableViewDataSource
         Event(name: "MNF 1", location: "Pike", date: "Oct. 5th", startTime: "5pm", endTime: "10pm"),
         Event(name: "Milkshake & Movie", location: "Pike", date: "Oct. 6th", startTime: "5pm", endTime: "10pm"),
         Event(name: "MNF 2", location: "Pike", date: "Oct. 12th", startTime: "5pm", endTime: "10pm"),
-        Event(name: "Bluechip", location: "Terre Haute, IN", date: "Oct. 13th", startTime: "5pm", endTime: "10pm"),
-        Event(name: "Bazbeaux", location: "Indianapolis, IN", date: "Oct. 15th", startTime: "5pm", endTime: "10pm"),
         Event(name: "Second Formals 1", location: "Pike", date: "Oct. 16th", startTime: "5pm", endTime: "10pm"),
         Event(name: "St. Louis Trip", location: "St. Louis, MO", date: "Oct. 17th", startTime: "5pm", endTime: "10pm"),
         Event(name: "Second Formals 2", location: "Pike", date: "Oct. 18th", startTime: "5pm", endTime: "10pm"),

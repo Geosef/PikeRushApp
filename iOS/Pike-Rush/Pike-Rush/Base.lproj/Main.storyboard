@@ -23,7 +23,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pike Fall Rush Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chL-On-ewF">
                                         <rect key="frame" x="163" y="24" width="273" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                        <color key="textColor" red="0.6588235294" green="0.61960784310000006" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -118,12 +118,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mug-hv-XVk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-NW-n76">
-                                        <rect key="frame" x="237" y="24" width="126" height="34.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                        <color key="textColor" red="0.6588235294" green="0.61960784310000006" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-Ut-Mtc">
                                         <rect key="frame" x="8" y="30" width="24" height="24"/>
                                         <state key="normal" image="ic_close_white">
@@ -133,6 +127,12 @@
                                             <action selector="backButton:" destination="bmn-Es-n2O" eventType="touchUpInside" id="xeV-qF-rxF"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHF-NW-n76">
+                                        <rect key="frame" x="237" y="24" width="126" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.59215686270000001" green="0.0" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -151,12 +151,49 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FTP-2015.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xgp-VP-hyk">
+                                <rect key="frame" x="8" y="72" width="584" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3w4-4L-Lrs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Dorms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-Mr-3Si">
+                                <rect key="frame" x="262" y="255" width="75" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sept. 14th, 5 - 10pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbr-Oa-uri">
+                                <rect key="frame" x="199" y="226" width="203.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-Oz-Mas">
+                                <rect key="frame" x="16" y="286.5" width="568" height="305.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Sbr-Oa-uri" secondAttribute="centerX" id="2Za-ok-luH"/>
                             <constraint firstItem="Mug-hv-XVk" firstAttribute="top" secondItem="QcX-HS-oqE" secondAttribute="top" id="EGL-HN-HsJ"/>
                             <constraint firstAttribute="trailing" secondItem="Mug-hv-XVk" secondAttribute="trailing" id="L7y-lf-8Sc"/>
+                            <constraint firstItem="Sbr-Oa-uri" firstAttribute="top" secondItem="xgp-VP-hyk" secondAttribute="bottom" constant="4" id="L9O-mB-dre"/>
+                            <constraint firstItem="GoX-Mr-3Si" firstAttribute="top" secondItem="Sbr-Oa-uri" secondAttribute="bottom" id="W7r-jU-hKR"/>
+                            <constraint firstItem="hH7-Oz-Mas" firstAttribute="leading" secondItem="QcX-HS-oqE" secondAttribute="leadingMargin" id="aOD-8t-zRD"/>
+                            <constraint firstItem="Lyv-fx-74v" firstAttribute="top" secondItem="hH7-Oz-Mas" secondAttribute="bottom" constant="8" id="crH-wX-H8y"/>
+                            <constraint firstItem="hH7-Oz-Mas" firstAttribute="trailing" secondItem="QcX-HS-oqE" secondAttribute="trailingMargin" id="hfh-82-wkG"/>
+                            <constraint firstItem="xgp-VP-hyk" firstAttribute="leading" secondItem="QcX-HS-oqE" secondAttribute="leading" constant="8" id="jw3-05-5sr"/>
+                            <constraint firstAttribute="centerX" secondItem="GoX-Mr-3Si" secondAttribute="centerX" id="mIc-fA-QUd"/>
+                            <constraint firstItem="xgp-VP-hyk" firstAttribute="top" secondItem="Mug-hv-XVk" secondAttribute="bottom" constant="8" id="pCD-M6-hHb"/>
+                            <constraint firstAttribute="trailing" secondItem="xgp-VP-hyk" secondAttribute="trailing" constant="8" id="suq-qz-jKZ"/>
                             <constraint firstItem="Mug-hv-XVk" firstAttribute="leading" secondItem="QcX-HS-oqE" secondAttribute="leading" id="u11-xG-Cen"/>
+                            <constraint firstItem="hH7-Oz-Mas" firstAttribute="top" secondItem="GoX-Mr-3Si" secondAttribute="bottom" constant="8" id="xd1-v6-ouT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -196,7 +233,7 @@
         <!--About-->
         <scene sceneID="JNZ-TW-VsX">
             <objects>
-                <viewController id="eqf-N8-zP0" customClass="AboutView" customModule="Pike_Rush" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" definesPresentationContext="YES" id="eqf-N8-zP0" customClass="AboutView" customModule="Pike_Rush" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AKU-OK-sCw"/>
                         <viewControllerLayoutGuide type="bottom" id="QWS-1a-Mx4"/>
@@ -205,56 +242,175 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="About View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pY4-zQ-yl4">
-                                <rect key="frame" x="209" y="278" width="181.5" height="41.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by AboutViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-TU-U7T">
-                                <rect key="frame" x="198" y="328" width="205" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vD-8g-26t">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vD-8g-26t" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Pike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqk-pr-Mdz">
                                         <rect key="frame" x="234" y="24" width="130.5" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                        <color key="textColor" red="0.6588235294" green="0.61960784310000006" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.59215686270000001" green="0.0" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mqk-pr-Mdz" secondAttribute="bottom" constant="5" id="1mK-Bk-cja"/>
-                                    <constraint firstAttribute="height" constant="64" id="CgG-dw-Jcg"/>
-                                    <constraint firstAttribute="centerY" secondItem="mqk-pr-Mdz" secondAttribute="centerY" id="FwY-zA-l7e"/>
-                                    <constraint firstAttribute="centerX" secondItem="mqk-pr-Mdz" secondAttribute="centerX" id="qvz-h3-1XC"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="xOa-sU-EV9"/>
+                                    <constraint firstAttribute="centerX" secondItem="mqk-pr-Mdz" secondAttribute="centerX" id="biT-hS-5Se"/>
+                                    <constraint firstAttribute="height" constant="64" id="dGq-6z-Qtz"/>
+                                    <constraint firstAttribute="bottom" secondItem="mqk-pr-Mdz" secondAttribute="bottom" constant="5.5" id="nAv-1E-BTD"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vl0-9f-WZh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUr-lc-fNo" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="25th anniversary.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-Pw-smp">
+                                                <rect key="frame" x="55" y="8" width="210" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="Mz0-S3-0t1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pike_aspen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tbB-Bz-vRS">
+                                                <rect key="frame" x="8" y="564" width="304" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="dDZ-fN-dsL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hy-4h-UK8" userLabel="Pike National">
+                                                <rect key="frame" x="8" y="722" width="304" height="370"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Pi Kappa Alpha International Fraternity">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Heavy"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">When you join Pi Kappa Alpha, you’re not just joining over 100 of the best men on Rose-Hulman’s campus. You’re joining one of the largest fraternal organizations in the world. Pi Kappa Alpha boasts over 14,000 undergraduate members in more than 220 chapters across the United States and Canada. The international fraternity offers resources that can be found very few other places. From an alumni network of over 250,000 lifetime initiates to yearly leadership and education conferences to develop leadership, management, and interpersonal skills that can benefit you for the rest of your life and career.
+
+To learn more about the Pi Kappa Alpha National Fraternity visit pikes.org</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfo-Hv-cwN" userLabel="Rose Pike">
+                                                <rect key="frame" x="8" y="166" width="304" height="390"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="390" id="70v-x3-dfZ"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Rose-Hulman Pi Kappa Alpha ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Heavy"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">The men of the Pi Kappa Alpha (Pike) chapter at Rose-Hulman exemplify the Fraternity’s 4 key principles; Scholars, Leaders, Athletes, and Gentlemen. Pike consistently boasts the highest GPA of all fraternities at Rose-Hulman. We have won the Greek Intramural sports trophy for as long as the trophy has been around. Pike members can be found in leadership roles in clubs across campus including Res. Life staff, Design Build Fly, Formula SAE, Climbing Club, SGA, Robotics Club and many more. The Pike chapter at Rose-Hulman has also recently been placed in the top 10% of (or top 22) Pike chapters in the nation.
+
+To learn more about the Pike chapter at Rose-Hulman visit pi-kappa-alpha.net</string>
+                                                        <attributes>
+                                                            <font key="NSFont" size="14" name="Avenir-Book"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36"/>
+                                                            <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5wv-Pw-smp" firstAttribute="top" secondItem="BUr-lc-fNo" secondAttribute="top" constant="8" id="1vF-k4-xDe"/>
+                                            <constraint firstAttribute="width" constant="320" id="6xs-Nz-yTv"/>
+                                            <constraint firstItem="5wv-Pw-smp" firstAttribute="leading" secondItem="BUr-lc-fNo" secondAttribute="leading" constant="55" id="9E4-17-AFg"/>
+                                            <constraint firstAttribute="bottom" secondItem="0hy-4h-UK8" secondAttribute="bottom" constant="8" id="GYu-hM-XKJ"/>
+                                            <constraint firstItem="0hy-4h-UK8" firstAttribute="top" secondItem="tbB-Bz-vRS" secondAttribute="bottom" constant="8" id="KwC-bd-Fnm"/>
+                                            <constraint firstItem="Bfo-Hv-cwN" firstAttribute="top" secondItem="5wv-Pw-smp" secondAttribute="bottom" constant="8" id="Nm6-40-er2"/>
+                                            <constraint firstItem="Bfo-Hv-cwN" firstAttribute="leading" secondItem="BUr-lc-fNo" secondAttribute="leading" constant="8" id="UFa-UQ-x8O"/>
+                                            <constraint firstAttribute="trailing" secondItem="5wv-Pw-smp" secondAttribute="trailing" constant="55" id="dVQ-kj-GBx"/>
+                                            <constraint firstItem="0hy-4h-UK8" firstAttribute="leading" secondItem="BUr-lc-fNo" secondAttribute="leading" constant="8" id="fLL-Wh-WOi"/>
+                                            <constraint firstAttribute="height" constant="1100" id="kQp-VE-aH3"/>
+                                            <constraint firstItem="tbB-Bz-vRS" firstAttribute="leading" secondItem="BUr-lc-fNo" secondAttribute="leading" constant="8" id="nn8-fA-zUy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bfo-Hv-cwN" secondAttribute="trailing" constant="8" id="ubA-UT-mZe"/>
+                                            <constraint firstItem="tbB-Bz-vRS" firstAttribute="top" secondItem="Bfo-Hv-cwN" secondAttribute="bottom" constant="8" id="wbM-Pd-KF3"/>
+                                            <constraint firstAttribute="trailing" secondItem="0hy-4h-UK8" secondAttribute="trailing" constant="8" id="zTN-cM-E2q"/>
+                                            <constraint firstAttribute="trailing" secondItem="tbB-Bz-vRS" secondAttribute="trailing" constant="8" id="zgk-Sk-QJJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BUr-lc-fNo" firstAttribute="leading" secondItem="Vl0-9f-WZh" secondAttribute="leading" id="F0U-M0-8Ky"/>
+                                    <constraint firstAttribute="bottom" secondItem="BUr-lc-fNo" secondAttribute="bottom" id="KhI-kR-hvA"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUr-lc-fNo" secondAttribute="trailing" id="UQE-vR-9lk"/>
+                                    <constraint firstItem="BUr-lc-fNo" firstAttribute="leading" secondItem="Vl0-9f-WZh" secondAttribute="leading" id="YMa-Iz-JR4"/>
+                                    <constraint firstAttribute="trailing" secondItem="BUr-lc-fNo" secondAttribute="trailing" id="hFM-aG-EjY"/>
+                                    <constraint firstItem="BUr-lc-fNo" firstAttribute="top" secondItem="Vl0-9f-WZh" secondAttribute="top" id="mPu-jI-EhH"/>
+                                    <constraint firstItem="BUr-lc-fNo" firstAttribute="top" secondItem="Vl0-9f-WZh" secondAttribute="top" id="neh-AG-RNa"/>
+                                    <constraint firstAttribute="bottom" secondItem="BUr-lc-fNo" secondAttribute="bottom" id="uqp-l5-k3g"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="FwY-zA-l7e"/>
+                                        <exclude reference="F0U-M0-8Ky"/>
+                                        <exclude reference="hFM-aG-EjY"/>
+                                        <exclude reference="neh-AG-RNa"/>
+                                        <exclude reference="uqp-l5-k3g"/>
                                     </mask>
                                 </variation>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3vD-8g-26t" secondAttribute="trailing" id="4Fh-QX-T5M"/>
-                            <constraint firstItem="6cH-TU-U7T" firstAttribute="centerX" secondItem="pY4-zQ-yl4" secondAttribute="centerX" id="UnJ-R6-q6f"/>
-                            <constraint firstAttribute="centerY" secondItem="pY4-zQ-yl4" secondAttribute="centerY" id="WMo-G9-OoV"/>
-                            <constraint firstItem="3vD-8g-26t" firstAttribute="top" secondItem="lfR-5D-FzV" secondAttribute="top" id="Y2B-rU-G58"/>
-                            <constraint firstItem="6cH-TU-U7T" firstAttribute="top" secondItem="pY4-zQ-yl4" secondAttribute="bottom" constant="8" symbolic="YES" id="hPg-in-lUd"/>
-                            <constraint firstItem="3vD-8g-26t" firstAttribute="leading" secondItem="lfR-5D-FzV" secondAttribute="leading" id="kZX-gB-UYY"/>
-                            <constraint firstAttribute="centerX" secondItem="pY4-zQ-yl4" secondAttribute="centerX" id="q4x-0c-pOv"/>
+                            <constraint firstItem="3vD-8g-26t" firstAttribute="top" secondItem="lfR-5D-FzV" secondAttribute="top" id="Adb-Hv-kRc"/>
+                            <constraint firstItem="QWS-1a-Mx4" firstAttribute="top" secondItem="Vl0-9f-WZh" secondAttribute="bottom" id="Bgk-Y4-RDL"/>
+                            <constraint firstAttribute="trailing" secondItem="Vl0-9f-WZh" secondAttribute="trailing" id="Bw2-QB-sMg"/>
+                            <constraint firstItem="3vD-8g-26t" firstAttribute="leading" secondItem="lfR-5D-FzV" secondAttribute="leading" id="Duf-nc-cyk"/>
+                            <constraint firstItem="Vl0-9f-WZh" firstAttribute="leading" secondItem="lfR-5D-FzV" secondAttribute="leading" id="fdk-eE-p02"/>
+                            <constraint firstItem="Vl0-9f-WZh" firstAttribute="top" secondItem="3vD-8g-26t" secondAttribute="bottom" id="t6W-lu-pqX"/>
+                            <constraint firstAttribute="trailing" secondItem="3vD-8g-26t" secondAttribute="trailing" id="vg9-am-Ndn"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="About" image="ic_account_circle" id="Y97-PV-WWM"/>
+                    <connections>
+                        <outlet property="contentView" destination="BUr-lc-fNo" id="GoF-Mh-oV6"/>
+                        <outlet property="scrollView" destination="Vl0-9f-WZh" id="GTx-4h-3aE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cv3-5b-irc" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,8 +418,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="25th anniversary.jpg" width="900" height="500"/>
+        <image name="FTP-2015.jpg" width="4579" height="2101"/>
         <image name="ic_account_circle" width="24" height="24"/>
         <image name="ic_close_white" width="24" height="24"/>
         <image name="ic_event" width="24" height="24"/>
+        <image name="pike_aspen.jpg" width="2048" height="1615"/>
     </resources>
 </document>
