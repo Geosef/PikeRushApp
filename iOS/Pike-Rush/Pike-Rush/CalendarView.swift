@@ -58,7 +58,7 @@ class CalendarView: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:CalendarViewCell = self.tableView!.dequeueReusableCellWithIdentifier("calendarCell") as! CalendarViewCell
+        let cell:CalendarViewCell = self.tableView!.dequeueReusableCellWithIdentifier("calendarCell") as! CalendarViewCell
         
         cell.eventTitle.text = self.events[indexPath.row].name
         cell.eventDate.text = self.events[indexPath.row].date
@@ -73,7 +73,7 @@ class CalendarView: UIViewController, UITableViewDelegate, UITableViewDataSource
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "showEventDetails") {
             let viewController:EventView = segue.destinationViewController as! EventView
-            let indexPath = self.tableView!.indexPathForSelectedRow()
+            let indexPath = self.tableView!.indexPathForSelectedRow
             viewController.event = self.events[indexPath!.row]
         }
     }
